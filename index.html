@@ -171,7 +171,37 @@
 <p>a) E1 E2 E3.</p>
 <p>b) E1 > E2 >E3.</p>
 
-
+</div>
+    <p>
+<p>a) Mẫu định dạng E1 E2 E3: Đây là một mẫu kết hợp (descendant selector) trong CSS, áp dụng cho các phần tử E3 nằm trong phần tử E2, và phần tử E2 nằm trong phần tử E1. Mẫu này không yêu cầu E2 và E3 là con trực tiếp của E1, mà có thể nằm bất kỳ đâu trong cây phân cấp của E1.</p>
+<p>Ví dụ:</p>
+<p>< ul class="parent"> </p>
+<p>    < li class="child"></p>
+<p>        < span>Item 1</ span></p>
+<p>    </ li></p>
+<p>    < li class="child"> </p>
+<p>        < span> Item 2</ span></p>
+<p>    < /li></p>
+<p>< /ul></p>
+<p>Trong ví dụ trên, mẫu định dạng . container . parent . child span áp dụng cho phần tử < span> nằm trong phần tử có lớp " child", nằm trong phần tử có lớp " parent", và nằm trong phần tử có lớp " container". Điều này cho phép chúng ta định dạng các phần tử < span> trong một cây phân cấp phức tạp.</p>
+<p>b) Mẫu định dạng E1 > E2 > E3: Đây là một mẫu kết hợp ( child combinator) trong CSS, áp dụng cho các phần tử E3 là con trực tiếp của E2, và E2 là con trực tiếp của E1. Mẫu này yêu cầu E2 và E3 nằm trực tiếp trong E1.</p>
+<p>Ví dụ:</p>
+<p>< ul class="parent"> </p>
+<p>     < li class="child"></p>
+<p>     < span>Item 1</ span></p>
+<p>   < /li></p>
+<p>   < li class="child"> </p>
+<p>       < span>Item 2< /span></p>
+<p>   < /li></p>
+<p>< /ul></p>
+<p>Trong ví dụ trên, mẫu định dạng .parent > .child > span áp dụng cho phần tử < span> là con trực tiếp của phần tử có lớp " hild", và phần tử có lớp " child" là con trực tiếp của phần tử có lớp " parent". Điều này cho phép chúng ta định dạng các phần tử <span> chỉ khi chúng nằm trực tiếp trong các phần tử < li> và < ul>, không áp dụng cho các phần tử < span> khác nằm ở cấp độ khác trong cây phân cấp.</p>
+              </p>
+                           
+ <div class="problem-box">
+        <b>Đề bài:</b>  
+       <p>Vận dụng 2 trang 88 Tin học 12: Tìm ví dụ và giải thích ý nghĩa cho các mẫu định dạng CSS tổng quát như sau:</p>
+<p>a) E + F +G.</p>
+<p>b) E >F + G</p>
     </div>
 
     <p>
@@ -188,8 +218,8 @@
 <p>       < li>Item 4</ li></p>
 <p>   < /ul></p>
 <p></ div></p>
-<p>Trong ví dụ trên, mẫu định dạng .container h2 + p + p áp dụng cho các phần tử <p> nằm sau phần tử <h2>, và cùng nằm trực tiếp sau một phần tử <p>. Điều này cho phép chúng ta định dạng các phần tử <p> mà là anh em kế tiếp của phần tử <h2> và nằm trực tiếp sau một phần tử <p>.</p>
-<p>b) Mẫu định dạng E > F + G: Đây là một mẫu kết hợp (child combinator và adjacent sibling combinator) trong CSS, áp dụng cho các phần tử G là anh em kế tiếp của phần tử F, và phần tử F là con trực tiếp của phần tử E. Mẫu này yêu cầu F và G nằm trực tiếp sau E và cùng nằm trong cùng một cấp độ của cây phân cấp.</p>
+<p>Trong ví dụ trên, mẫu định dạng .container h2 + p + p áp dụng cho các phần tử < p> nằm sau phần tử < h2>, và cùng nằm trực tiếp sau một phần tử < p>. Điều này cho phép chúng ta định dạng các phần tử < p> mà là anh em kế tiếp của phần tử <h2> và nằm trực tiếp sau một phần tử < p>.</p>
+<p>b) Mẫu định dạng E > F + G: Đây là một mẫu kết hợp ( child combinator và adjacent sibling combinator) trong CSS, áp dụng cho các phần tử G là anh em kế tiếp của phần tử F, và phần tử F là con trực tiếp của phần tử E. Mẫu này yêu cầu F và G nằm trực tiếp sau E và cùng nằm trong cùng một cấp độ của cây phân cấp.</p>
 <p>Ví dụ:</p>
 <p>< div class="container"></p>
 <p>    < ul></p>
