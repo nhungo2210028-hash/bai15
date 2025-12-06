@@ -205,34 +205,34 @@
     </div>
 
     <p>
-<p> a) Mẫu định dạng E + F + G: Đây là một mẫu kết hợp (adjacent sibling combinator) trong CSS, áp dụng cho các phần tử G là anh em kế tiếp của phần tử F, và phần tử F là anh em kế tiếp của phần tử E. Mẫu này yêu cầu F và G nằm trực tiếp sau E và cùng nằm trong cùng một cấp độ của cây phân cấp.</p>
+<p> a) Mẫu định dạng E + F + G: Đây là một mẫu kết hợp ( adjacent sibling combinator ) trong CSS, áp dụng cho các phần tử G là anh em kế tiếp của phần tử F, và phần tử F là anh em kế tiếp của phần tử E. Mẫu này yêu cầu F và G nằm trực tiếp sau E và cùng nằm trong cùng một cấp độ của cây phân cấp.</p>
 <p>Ví dụ:</p>
-<p>< div class="container"></p>
-<p>   < ul></p>
-<p>        < li>Item 1</ li></p>
-<p>        < li>Item 2</ li></p>
-<p>    </ ul> </p>
-<p>        < p>Paragraph< /p></p>
-<p>   < ul></p>
-<p>       < li>Item 3</ li></p>
-<p>       < li>Item 4</ li></p>
-<p>   < /ul></p>
-<p></ div></p>
-<p>Trong ví dụ trên, mẫu định dạng .container h2 + p + p áp dụng cho các phần tử < p > nằm sau phần tử < h2 >, và cùng nằm trực tiếp sau một phần tử < p >. Điều này cho phép chúng ta định dạng các phần tử < p > mà là anh em kế tiếp của phần tử < h2> và nằm trực tiếp sau một phần tử < p>.</p>
+<p>< div class = "container" ></p>
+<p>   < ul ></p>
+<p>        < li >Item 1< /li></p>
+<p>        < li>Item 2< /li></p>
+<p>    </ ul > </p>
+<p>        < p >Paragraph< /p></p>
+<p>   < ul ></p>
+<p>       < li >Item 3< /li></p>
+<p>       < li >Item 4< /li></p>
+<p>   < /ul ></p>
+<p>< /div ></p>
+<p>Trong ví dụ trên, mẫu định dạng . container h2 + p + p áp dụng cho các phần tử < p > nằm sau phần tử < h2 >, và cùng nằm trực tiếp sau một phần tử < p >. Điều này cho phép chúng ta định dạng các phần tử < p > mà là anh em kế tiếp của phần tử < h2 > và nằm trực tiếp sau một phần tử < p >.</p>
 <p>b) Mẫu định dạng E > F + G : Đây là một mẫu kết hợp ( child combinator và adjacent sibling combinator ) trong CSS, áp dụng cho các phần tử G là anh em kế tiếp của phần tử F, và phần tử F là con trực tiếp của phần tử E. Mẫu này yêu cầu F và G nằm trực tiếp sau E và cùng nằm trong cùng một cấp độ của cây phân cấp.</p>
 <p>Ví dụ:</p>
-<p>< div class ="container"></p>
+<p>< div class = "container"></p>
 <p>    < ul ></p>
 <p>        < li >Item 1< /li></p>
-<p>       < li>Item 2</ li></p>
+<p>       < li >Item 2< /li></p>
+<p>    < /ul ></p>
+<p>         < p>Paragraph< /p></p>
+<p>    < ul ></p>
+<p>        < li >Item 3< /li></p>
+<p>        < li >Item 4< /li></p>
 <p>    < /ul></p>
-<p>         < p>Paragraph</ p></p>
-<p>    < ul></p>
-<p>        < li>Item 3</ li></p>
-<p>        < li>Item 4</ li></p>
-<p>    </ ul></p>
-<p></ div></p>
-<p>Trong ví dụ trên, mẫu định dạng .container > ul + p + ul áp dụng cho các phần tử < ul> nằm trực tiếp sau phần tử < p>, và cùng nằm trực tiếp sau một phần tử < ul> nằm trực tiếp trong phần tử có lớp " container". Điều này cho phép chúng ta áp dụng kiểu CSS cho các phần tử < ul> mà là anh em kế tiếp của một phần tử < p> và nằm trực tiếp sau một phần tử < ul> nằm trực tiếp trong phần tử có lớp " container".</p>
+<p>< /div></p>
+<p>Trong ví dụ trên, mẫu định dạng . container > ul + p + ul áp dụng cho các phần tử < ul > nằm trực tiếp sau phần tử < p >, và cùng nằm trực tiếp sau một phần tử < ul > nằm trực tiếp trong phần tử có lớp " container ". Điều này cho phép chúng ta áp dụng kiểu CSS cho các phần tử < ul > mà là anh em kế tiếp của một phần tử < p > và nằm trực tiếp sau một phần tử < ul > nằm trực tiếp trong phần tử có lớp " container ".</p>
 
     </p>
 
